@@ -161,11 +161,11 @@ function CVSection({ t, accentHue }) {
               <span className="count">{t.cv.contact_count}</span>
             </div>
             <div className="contact-grid">
-              <a href="mailto:theo.dalex@example.com" className="contact-link">
+              <a href="mailto:theodalex93460@gmail.com" className="contact-link">
                 <span className="label">EMAIL</span>
                 <span>→</span>
               </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="contact-link">
+              <a href="https://github.com/Theo-Dalex" target="_blank" rel="noreferrer" className="contact-link">
                 <span className="label">GITHUB</span>
                 <span>→</span>
               </a>
