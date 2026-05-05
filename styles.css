@@ -354,6 +354,18 @@ section {
 }
 
 /* ============ PROJECTS ============ */
+.projects-category {
+  margin-bottom: 48px;
+}
+.projects-category-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

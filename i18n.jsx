@@ -3,7 +3,7 @@ const I18N = {
   fr: {
     nav: { home: 'accueil', work: 'projets', about: 'à propos' },
     location: 'Paris, FR',
-    status: 'Disponible Q3 2026',
+    status: 'Disponible ASAP',
     timezone: 'UTC+1',
     role_titles: [
       'Data Scientist',
@@ -25,14 +25,29 @@ const I18N = {
     projects: {
       label: 'mes projets / 2024 — 2026',
       title: 'Sélection de travaux',
-      sub: 'Six projets qui couvrent du prototype recherche au système ML déployé en production. Cliquez pour explorer.',
-      items: [
-        { tag: 'NLP', title: 'Sentinel-LM', desc: "Système de détection d'hallucinations pour LLMs en production. Réduit le taux d'erreur de 34% sur les pipelines RAG.", stack: ['Python', 'PyTorch', 'FastAPI', 'Redis'] },
-        { tag: 'CV', title: 'GeoVision', desc: "Modèle de segmentation d'images satellites pour cartographier la végétation urbaine sur 12 grandes villes.", stack: ['TensorFlow', 'GDAL', 'GCP'] },
-        { tag: 'TIME-SERIES', title: 'PulseGrid', desc: "Prévision de charge énergétique horaire avec ensembles de transformers. MAPE 4.1% sur 18 mois.", stack: ['XGBoost', 'Darts', 'MLflow'] },
-        { tag: 'DATA-VIZ', title: 'Atlas Mobility', desc: "Dashboard interactif de mobilité urbaine. Traite 800M de points GPS anonymisés par jour.", stack: ['DuckDB', 'D3.js', 'Observable'] },
-        { tag: 'RESEARCH', title: 'Causal-Lab', desc: "Bibliothèque open-source pour l'inférence causale sur données observationnelles. 1.2k stars sur GitHub.", stack: ['Python', 'PyMC', 'NumPy'] },
-        { tag: 'LLM-OPS', title: 'PromptForge', desc: "Plateforme d'évaluation et versioning de prompts. Tests A/B automatisés sur 14 modèles.", stack: ['TypeScript', 'Postgres', 'OpenAI'] },
+      sub: 'Projets répartis en trois catégories. Cliquez pour explorer.',
+      categories: [
+        {
+          name: 'Jeux-vidéo',
+          items: [
+            { tag: 'GAME', title: 'Sentinel-LM', desc: "Système de détection d'hallucinations pour LLMs en production. Réduit le taux d'erreur de 34% sur les pipelines RAG.", stack: ['Python', 'PyTorch', 'FastAPI', 'Redis'] },
+            { tag: 'GAME', title: 'GeoVision', desc: "Modèle de segmentation d'images satellites pour cartographier la végétation urbaine sur 12 grandes villes.", stack: ['TensorFlow', 'GDAL', 'GCP'] },
+          ],
+        },
+        {
+          name: 'Projet Kaggle',
+          items: [
+            { tag: 'KAGGLE', title: 'PulseGrid', desc: "Prévision de charge énergétique horaire avec ensembles de transformers. MAPE 4.1% sur 18 mois.", stack: ['XGBoost', 'Darts', 'MLflow'] },
+            { tag: 'KAGGLE', title: 'Atlas Mobility', desc: "Dashboard interactif de mobilité urbaine. Traite 800M de points GPS anonymisés par jour.", stack: ['DuckDB', 'D3.js', 'Observable'] },
+          ],
+        },
+        {
+          name: 'Divers',
+          items: [
+            { tag: 'RESEARCH', title: 'Causal-Lab', desc: "Bibliothèque open-source pour l'inférence causale sur données observationnelles. 1.2k stars sur GitHub.", stack: ['Python', 'PyMC', 'NumPy'] },
+            { tag: 'LLM-OPS', title: 'PromptForge', desc: "Plateforme d'évaluation et versioning de prompts. Tests A/B automatisés sur 14 modèles.", stack: ['TypeScript', 'Postgres', 'OpenAI'] },
+          ],
+        },
       ],
     },
     cv: {
@@ -96,14 +111,29 @@ const I18N = {
     projects: {
       label: 'selected work / 2024 — 2026',
       title: 'Selected work',
-      sub: 'Six projects spanning research prototypes to production-grade ML systems. Click to explore.',
-      items: [
-        { tag: 'NLP', title: 'Sentinel-LM', desc: 'Hallucination detection system for production LLMs. Cuts error rate by 34% on RAG pipelines.', stack: ['Python', 'PyTorch', 'FastAPI', 'Redis'] },
-        { tag: 'CV', title: 'GeoVision', desc: 'Satellite imagery segmentation model mapping urban vegetation across 12 major cities.', stack: ['TensorFlow', 'GDAL', 'GCP'] },
-        { tag: 'TIME-SERIES', title: 'PulseGrid', desc: 'Hourly energy load forecasting with transformer ensembles. 4.1% MAPE over 18 months.', stack: ['XGBoost', 'Darts', 'MLflow'] },
-        { tag: 'DATA-VIZ', title: 'Atlas Mobility', desc: 'Interactive urban mobility dashboard. Processes 800M anonymised GPS points daily.', stack: ['DuckDB', 'D3.js', 'Observable'] },
-        { tag: 'RESEARCH', title: 'Causal-Lab', desc: 'Open-source library for causal inference on observational data. 1.2k GitHub stars.', stack: ['Python', 'PyMC', 'NumPy'] },
-        { tag: 'LLM-OPS', title: 'PromptForge', desc: 'Prompt evaluation and versioning platform. Automated A/B tests across 14 models.', stack: ['TypeScript', 'Postgres', 'OpenAI'] },
+      sub: 'Projects split into three categories. Click to explore.',
+      categories: [
+        {
+          name: 'Video Games',
+          items: [
+            { tag: 'GAME', title: 'Sentinel-LM', desc: 'Hallucination detection system for production LLMs. Cuts error rate by 34% on RAG pipelines.', stack: ['Python', 'PyTorch', 'FastAPI', 'Redis'] },
+            { tag: 'GAME', title: 'GeoVision', desc: 'Satellite imagery segmentation model mapping urban vegetation across 12 major cities.', stack: ['TensorFlow', 'GDAL', 'GCP'] },
+          ],
+        },
+        {
+          name: 'Kaggle Projects',
+          items: [
+            { tag: 'KAGGLE', title: 'PulseGrid', desc: 'Hourly energy load forecasting with transformer ensembles. 4.1% MAPE over 18 months.', stack: ['XGBoost', 'Darts', 'MLflow'] },
+            { tag: 'KAGGLE', title: 'Atlas Mobility', desc: 'Interactive urban mobility dashboard. Processes 800M anonymised GPS points daily.', stack: ['DuckDB', 'D3.js', 'Observable'] },
+          ],
+        },
+        {
+          name: 'Misc',
+          items: [
+            { tag: 'RESEARCH', title: 'Causal-Lab', desc: 'Open-source library for causal inference on observational data. 1.2k GitHub stars.', stack: ['Python', 'PyMC', 'NumPy'] },
+            { tag: 'LLM-OPS', title: 'PromptForge', desc: 'Prompt evaluation and versioning platform. Automated A/B tests across 14 models.', stack: ['TypeScript', 'Postgres', 'OpenAI'] },
+          ],
+        },
       ],
     },
     cv: {

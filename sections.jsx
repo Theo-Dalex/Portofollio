@@ -54,7 +54,7 @@ function HeroSection({ t, accentHue, particleSpeed }) {
           <a href="#work" className="btn btn-primary">
             {t.hero.cta_primary} <span>→</span>
           </a>
-          <a href="#about" className="btn btn-ghost">
+          <a href="./CV-Theo-DALEX-Design.pdf" download className="btn btn-ghost">
             {t.hero.cta_secondary} <span>↓</span>
           </a>
         </div>
@@ -102,11 +102,16 @@ function ProjectsSection({ t, accentHue }) {
       <div className="section-label">{t.projects.label}</div>
       <h2 className="section-title">{t.projects.title}</h2>
       <p className="section-sub">{t.projects.sub}</p>
-      <div className="projects-grid">
-        {t.projects.items.map((p, i) => (
-          <ProjectCard key={i} project={p} idx={i} accentHue={accentHue} />
-        ))}
-      </div>
+      {t.projects.categories.map((cat) => (
+        <div key={cat.name} className="projects-category">
+          <div className="projects-category-title">// {cat.name}</div>
+          <div className="projects-grid">
+            {cat.items.map((p, i) => (
+              <ProjectCard key={i} project={p} idx={i} accentHue={accentHue} />
+            ))}
+          </div>
+        </div>
+      ))}
     </section>
   );
 }
