@@ -174,12 +174,8 @@ function CVSection({ t, accentHue }) {
                 <span className="label">GITHUB</span>
                 <span>→</span>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="contact-link">
+              <a href="https://www.linkedin.com/in/theo-dalex" target="_blank" rel="noreferrer" className="contact-link">
                 <span className="label">LINKEDIN</span>
-                <span>→</span>
-              </a>
-              <a href="https://scholar.google.com" target="_blank" rel="noreferrer" className="contact-link">
-                <span className="label">SCHOLAR</span>
                 <span>→</span>
               </a>
             </div>
