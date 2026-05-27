@@ -54,7 +54,7 @@ function HeroSection({ t, accentHue, particleSpeed }) {
           <a href="#work" className="btn btn-primary">
             {t.hero.cta_primary} <span>→</span>
           </a>
-          <a href="./CV-Theo-DALEX-Design.pdf" download className="btn btn-ghost">
+          <a href="./CV-Theo-DALEX-DataAnalyst.pdf" download className="btn btn-ghost">
             {t.hero.cta_secondary} <span>↓</span>
           </a>
         </div>
